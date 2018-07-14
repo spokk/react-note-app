@@ -1,0 +1,43 @@
+.editor{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.editor textarea{
+    resize: none;
+    max-width: 480px;
+    width: 460px;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px 8px 42px 8px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.editor__button{
+    position: absolute;
+    bottom: 8px;
+    /* right: 8px; */
+    margin-left: 200px;
+    width: 60px;
+    background: lightgreen;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,.4);
+    transition: all .2s ease;
+
+}
+.editor__button:hover{
+    background-color: #4ea846;
+    cursor: pointer;
+}
+.editor__button:active{
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,.35);
+}
