@@ -19,6 +19,12 @@
     border-radius: 6px;
     margin-bottom: 10px;
 }
+@media (max-width: 800px){
+    .editor textarea{
+        width: 100%;
+        max-width: none;
+    }
+}
 .editor__panel{
     display: flex;
     justify-content: space-between;
@@ -40,6 +46,11 @@
     border-radius: 50%;
     color: transparent;
     overflow: hidden;
+}
+.color-item::selection{
+    background: transparent;
+    color: transparent;
+
 }
 .color-item[active="true"]{
     border: 2.5px solid black;
