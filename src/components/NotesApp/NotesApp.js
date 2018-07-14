@@ -12,6 +12,7 @@ class NotesApp extends Component {
 
     this.handleNoteAdd = this.handleNoteAdd.bind(this);
     this.handleNoteDelete= this.handleNoteDelete.bind(this);
+    
   }
   
   componentDidMount() {

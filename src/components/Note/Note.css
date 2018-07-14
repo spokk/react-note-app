@@ -27,11 +27,13 @@
     border-radius: 50%;
     width: 18px;
     height: 18px;
+    line-height: 18px;
     text-align: center;
     font-weight: 500;
-    background: red;
+    background: transparent;
     border:1px solid black;
-    opacity: .7;
+    opacity: .6;
+    font-weight: bold;
     transform: scale(.8);
     transition: all .3s ease;
 }
@@ -39,5 +41,5 @@
 .note__close:hover{
     cursor: pointer;
     opacity: 1;
-    transform: scale(1);
+    background: red;
 }

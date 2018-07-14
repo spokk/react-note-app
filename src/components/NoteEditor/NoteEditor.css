@@ -2,7 +2,9 @@
     position: relative;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .editor textarea{
@@ -15,13 +17,53 @@
     outline: none;
     font-size: 16px;
     border-radius: 6px;
+    margin-bottom: 10px;
+}
+.editor__panel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 460px;
+    max-height: 32px;
+}
+.color-list{
+    padding: 0;
+    margin: 0;
+}
+.color-item{
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid transparent;
+    margin-right: 8px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    color: transparent;
+    overflow: hidden;
+}
+.color-item[active="true"]{
+    border: 2.5px solid black;
+}
+.color-item[value='red']{
+    background: red;
+}
+.color-item[value='yellow']{
+    background: yellow;
+}
+.color-item[value='seagreen']{
+    background: seagreen;
+}
+.color-item[value='white']{
+    background: white;
+}
+.color-item[value='dodgerblue']{
+    background: dodgerblue;
+}
+.color-item:hover{
+    cursor: pointer;
 }
 
 .editor__button{
-    position: absolute;
-    bottom: 8px;
-    /* right: 8px; */
-    margin-left: 200px;
     width: 60px;
     background: lightgreen;
     border: none;
